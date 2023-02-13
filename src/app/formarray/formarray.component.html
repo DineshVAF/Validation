@@ -1,0 +1,16 @@
+<input type="text" [formControl]="name" >
+&nbsp; &nbsp; 
+<select (change)="select($event)">
+    <option hidden selected>--Select--</option>
+    <option value="1" >Yes</option>
+    <option value="2">No</option>
+</select>
+<br>
+<input type="text" [formControl]="fname">
+<p class="red" *ngIf="fname.invalid">Name is Required</p>
+<br>
+<select (change)="sel($event)">
+    <option hidden selected>--Select--</option>
+    <option value="3" >Yes</option>
+    <option value="4">No</option>
+</select>

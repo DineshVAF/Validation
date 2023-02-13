@@ -1,0 +1,30 @@
+<form [formGroup]="putform" (ngSubmit)="submit()">
+    <div class="form">
+        <div class="put">
+            <h1>Reactive Form</h1>
+            <div class="field grid mt-4">
+                <label for="firstname3" class="col-fixed" style="width:100px">Firstname:</label>
+                <div class="col">
+                    <input id="firstname3" type="text" formControlName="firstname"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="putform.get('firstname').invalid && putform.get('firstname').touched">
+                        Firstname is Required</p>
+                    <p class="brown" *ngIf="!putform.get('firstname').valid && submitted">Firstname is Required</p>
+                </div>
+            </div>
+            <div class="field grid">
+                <label for="lastname1" class="col-fixed" style="width:100px">Lastname:</label>
+                <div class="col">
+                    <input id="lastname1" type="text" formControlName="lastname"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="putform.get('lastname').invalid && putform.get('lastname').touched">LastName
+                        is Required</p>
+                    <p class="brown" *ngIf="putform.get('lastname').invalid && submitted">LastName is Required</p>
+                </div>
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="but" [disabled]="putform.invalid" (click)="delete(4)">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

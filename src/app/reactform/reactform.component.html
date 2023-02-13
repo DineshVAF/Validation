@@ -1,0 +1,63 @@
+<form [formGroup]="react" (ngSubmit)="submit()">
+    <div class="react">
+        <div class="form">
+            <h1>Reactive Form</h1>
+            <div class="field grid mt-4">
+                <label for="firstname3" class="col-fixed" style="width:100px">Username:</label>
+                <div class="col">
+                    <input id="firstname3" type="text" formControlName="username"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="react.get('username').invalid && react.get('username').touched">Username is
+                        Required</p>
+                        <p class="brown" *ngIf="react.get('username').invalid && submitted">Username is
+                            Required</p>
+                </div>
+            </div>
+            <div class="field grid">
+                <label for="lastname1" class="col-fixed" style="width:100px">Mobile Number:</label>
+                <div class="col">
+                    <input id="lastname1" type="number" formControlName="mobilenumber"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="react.get('mobilenumber').invalid && react.get('mobilenumber').touched">Mobile Number is
+                        Required</p>
+                        <p class="brown" *ngIf="react.get('mobilenumber').invalid && submitted">Mobile is
+                            Required</p>
+                </div>
+            </div>
+            <div class="field grid">
+                <label for="lastname2" class="col-fixed" style="width:100px">Email:</label>
+                <div class="col">
+                    <input id="lastname2" type="email" formControlName="emailaddress"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="react.get('emailaddress').invalid && react.get('emailaddress').touched">Email is Required</p>
+                    <p class="brown" *ngIf="react.get('emailaddress').invalid && submitted">Email is Required</p>
+                </div>
+            </div>
+            <div class="field grid">
+                <label for="lastname3" class="col-fixed" style="width:100px">Password:</label>
+                <div class="col">
+                    <input id="lastname3" type="password" formControlName="password"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="react.get('password').invalid && react.get('password').touched">Password is
+                        Required</p>
+                        <p class="brown" *ngIf="react.get('password').invalid && submitted">Password is
+                            Required</p>
+                    </div>
+            </div>
+            <div class="field grid">
+                <label for="lastname4" class="col-fixed" style="width:100px">RoleID:</label>
+                <div class="col">
+                    <input id="lastname4" type="text" formControlName="roleid"
+                        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary">
+                    <p class="brown" *ngIf="react.get('roleid').invalid && react.get('roleid').touched">RoleId is
+                        Required</p>
+                        <p class="brown" *ngIf="react.get('roleid').invalid && submitted">RoleId is
+                            Required</p>
+                    </div>
+            </div>
+            <div class="mt-3">
+                <button type="submit" class="but">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

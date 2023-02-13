@@ -1,0 +1,19 @@
+.border_hole{
+    border: 1px solid black;
+    box-shadow: grey 2px 5px 8px 1px;
+    border: none;
+    border-radius: 15px;
+  
+}
+.red{
+    color: darkred;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  

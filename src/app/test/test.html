@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Test</h1>
+    <h3 id="sel"></h3>
+    <button onclick="clickMe()">Submit</button>
+</body>
+<script>
+    function clickMe() {
+        var details = [
+            {
+                "DateRecevied": "714",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "715",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "716",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+
+            },
+            {
+                "DateRecevied": "717",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "718",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+
+            },
+            {
+                "DateRecevied": "719",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "720",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "721",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "722",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            },
+            {
+                "DateRecevied": "723",
+                "1_30MinData": 0.23,
+                "2_30MinData": 0.16,
+                "3_30MinData": 0.16,
+                "4_30MinData": 0.13,
+                "5_30MinData": 0.14,
+                "6_30MinData": 0.12,
+                "7_30MinData": 0.11,
+                "8_30MinData": 0.08,
+                "9_30MinData": 0.08,
+                "10_30MinData": 0.13,
+            }
+        ];
+        var a, b = "";
+        document.getElementById('sel').innerHTML = b;
+
+        for (let i = 0; i < details.length; i++) {
+            debugger;
+            a = details[i].parseInt(DateRecevied);
+            // a = details[i].parseFloat(1_30MinData);
+            b=a;
+            console.log(b);
+        }
+    }
+</script>
+
+</html>
